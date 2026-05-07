@@ -21,3 +21,19 @@ You are helping a CoreX consultant build ServiceNow applications using the Servi
 - Use `now-sdk build` to compile.
 - Use `now-sdk install` to deploy.
 - Use the environment variables from `.env` for SDK authentication.
+
+## ServiceNow Documentation Reference
+
+A local copy of the ServiceNow documentation is available in:
+
+`./servicenow-docs`
+
+Before answering ServiceNow platform, SDK, Fluent, API, or implementation questions, review the relevant files in `./servicenow-docs`.
+
+Prefer this local documentation over memory when:
+- syntax or API details matter
+- ServiceNow release behavior matters
+- SDK or Fluent behavior matters
+- the answer depends on current platform documentation
+
+If the documentation is unclear or not found, state that clearly before making assumptions.
