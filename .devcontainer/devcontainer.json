@@ -5,5 +5,13 @@
     "--env-file",
     "${localWorkspaceFolder}/.env"
   ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "servicenow.fluent-language-extension"
+      ]
+    }
+  },
   "postCreateCommand": "npm install -g @servicenow/sdk @anthropic-ai/claude-code && claude plugin marketplace add servicenow/sdk && claude plugin install fluent && if [ ! -d servicenow-docs ]; then git clone --depth 1 https://github.com/ServiceNow/ServiceNowDocs.git servicenow-docs; else cd servicenow-docs && git pull; fi"
 }
