@@ -1,0 +1,9 @@
+{
+  "name": "CoreX ServiceNow SDK",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:4-24-trixie",
+  "runArgs": [
+    "--env-file",
+    "${localWorkspaceFolder}/.env"
+  ],
+  "postCreateCommand": "npm install -g @servicenow/sdk @anthropic-ai/claude-code && claude plugin marketplace add servicenow/sdk && claude plugin install fluent"
+}
